@@ -1,0 +1,118 @@
+2026-04-20 17:11:17 | INFO     | mexora_etl | Logger initialisé — fichier : logs\etl_20260420_171117.log
+2026-04-20 17:11:17 | INFO     | mexora_etl | ============================================================
+2026-04-20 17:11:17 | INFO     | mexora_etl |   DÉMARRAGE PIPELINE ETL MEXORA
+2026-04-20 17:11:17 | INFO     | mexora_etl |   Mode : POSTGRES
+2026-04-20 17:11:17 | INFO     | mexora_etl | ============================================================
+2026-04-20 17:11:17 | INFO     | mexora_etl | ─── PHASE EXTRACT ───────────────────────────
+2026-04-20 17:11:18 | INFO     | mexora_etl | [EXTRACT] commandes : 51500 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\commandes_mexora.csv
+2026-04-20 17:11:18 | INFO     | mexora_etl | [EXTRACT] clients : 1050 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\clients_mexora.csv
+2026-04-20 17:11:18 | INFO     | mexora_etl | [EXTRACT] produits : 120 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\produits_mexora.json
+2026-04-20 17:11:18 | INFO     | mexora_etl | [EXTRACT] regions : 20 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\regions_maroc.csv
+2026-04-20 17:11:18 | INFO     | mexora_etl | ─── PHASE TRANSFORM ─────────────────────────
+2026-04-20 17:11:18 | INFO     | mexora_etl | [TRANSFORM commandes] Début : 51500 lignes
+2026-04-20 17:11:18 | INFO     | mexora_etl | [R1 doublons] 1500 lignes supprimées → 50000 restantes
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R2 dates] 0 dates invalides supprimées → 50000 restantes
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R3 villes] 8879 villes non reconnues → 'Non renseignée'
+2026-04-20 17:11:23 | WARNING  | mexora_etl | [R4 statuts] 0 valeurs non reconnues → 'inconnu'
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R5 quantites] 59 lignes supprimées (quantite <= 0)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R6 prix] 78 commandes test supprimées (prix = 0)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R7 livreurs] 3497 valeurs manquantes → '-1' (livreur inconnu)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [TRANSFORM commandes] Terminé : 51500 → 49863 lignes (1637 supprimées au total)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [TRANSFORM clients] Début : 1050 lignes
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R1 doublons clients] 52 doublons supprimés → 998 restants
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R2 sexe] Standardisation terminée
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R3 naissance] 40 dates de naissance invalidées (âge hors [16-100])
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R4 email] 67 emails invalides → NULL
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R5 villes] Harmonisation terminée
+2026-04-20 17:11:23 | INFO     | mexora_etl | [TRANSFORM clients] Terminé : 1050 → 998 lignes (52 supprimées)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [TRANSFORM produits] Début : 120 lignes
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R1 categories] Normalisation terminée
+2026-04-20 17:11:23 | INFO     | mexora_etl | [R2 prix] 6 prix NULL remplacés par médiane de la catégorie
+2026-04-20 17:11:23 | INFO     | mexora_etl | [TRANSFORM produits] Terminé : 120 → 120 lignes
+2026-04-20 17:11:23 | INFO     | mexora_etl | [SEGMENT] 0 clients segmentés — Gold:0 / Silver:0 / Bronze:0
+2026-04-20 17:11:23 | INFO     | mexora_etl | [DIM_TEMPS] 2557 jours générés (2020-01-01 → 2026-12-31)
+2026-04-20 17:11:23 | INFO     | mexora_etl | [DIM_REGION] 20 régions chargées
+2026-04-20 17:11:23 | INFO     | mexora_etl | [DIM_PRODUIT] 120 produits — SCD Type 2 initialisé
+2026-04-20 17:11:23 | INFO     | mexora_etl | [DIM_CLIENT] 998 clients — SCD Type 2 initialisé
+2026-04-20 17:11:23 | INFO     | mexora_etl | [DIM_LIVREUR] 51 livreurs construits
+2026-04-20 17:11:24 | INFO     | mexora_etl | [FAIT_VENTES] 48446 lignes construites
+2026-04-20 17:11:24 | INFO     | mexora_etl | ─── PHASE LOAD ──────────────────────────────
+2026-04-20 17:11:24 | ERROR    | mexora_etl | ERREUR PIPELINE : 'utf-8' codec can't decode byte 0xe9 in position 103: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\data ingeneer\main.py", line 97, in run_pipeline
+    charger_dimension(dim_temps,    "dim_temps",    engine)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Desktop\data ingeneer\load\loader.py", line 15, in charger_dimension
+    df.to_sql(
+    ~~~~~~~~~^
+        name=table_name,
+        ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        chunksize=1000,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\pandas\core\generic.py", line 3052, in to_sql
+    return sql.to_sql(
+           ~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<8 lines>...
+        method=method,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\pandas\io\sql.py", line 840, in to_sql
+    with pandasSQL_builder(con, schema=schema, need_transaction=True) as pandas_sql:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\pandas\io\sql.py", line 908, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\pandas\io\sql.py", line 1649, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 3293, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 3317, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 103: invalid continuation byte

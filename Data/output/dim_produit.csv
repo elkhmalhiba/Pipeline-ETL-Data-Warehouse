@@ -1,0 +1,121 @@
+﻿id_produit_sk,id_produit_nk,nom_produit,categorie,sous_categorie,marque,fournisseur,prix_standard,origine_pays,date_creation,date_debut,date_fin,est_actif
+1,P001,Smartphones Ref-001,Electronique,Smartphones,HP,Samsung Gulf,9900.71,USA,2021-04-03,2026-04-20,9999-12-31,True
+2,P002,Smartphones Ref-002,Electronique,Smartphones,Apple,Huawei Morocco,14882.65,Japon,2023-09-12,2026-04-20,9999-12-31,True
+3,P003,Smartphones Ref-003,Electronique,Smartphones,Samsung,Samsung Gulf,14059.03,USA,2022-04-09,2026-04-20,9999-12-31,True
+4,P004,Smartphones Ref-004,Electronique,Smartphones,Sony,Apple MENA,14726.45,Chine,2023-03-08,2026-04-20,9999-12-31,True
+5,P005,Smartphones Ref-005,Electronique,Smartphones,LG,Apple MENA,3566.53,Corée du Sud,2023-01-14,2026-04-20,9999-12-31,True
+6,P006,Smartphones Ref-006,Electronique,Smartphones,Xiaomi,Tech Distributors MA,1946.77,Chine,2021-11-08,2026-04-20,9999-12-31,True
+7,P007,Smartphones Ref-007,Electronique,Smartphones,HP,Apple MENA,7635.05,USA,2020-09-23,2026-04-20,9999-12-31,True
+8,P008,Smartphones Ref-008,Electronique,Smartphones,Apple,Tech Distributors MA,4289.31,USA,2023-01-22,2026-04-20,9999-12-31,True
+9,P009,Ordinateurs Ref-009,Electronique,Ordinateurs,Sony,Tech Distributors MA,5386.22,Japon,2023-01-19,2026-04-20,9999-12-31,True
+10,P010,Ordinateurs Ref-010,Electronique,Ordinateurs,Apple,Tech Distributors MA,2980.03,Chine,2023-09-06,2026-04-20,9999-12-31,True
+11,P011,Ordinateurs Ref-011,Electronique,Ordinateurs,Sony,Tech Distributors MA,5737.7,Japon,2023-06-11,2026-04-20,9999-12-31,False
+12,P012,Ordinateurs Ref-012,Electronique,Ordinateurs,LG,Tech Distributors MA,5797.89,Corée du Sud,2023-07-01,2026-04-20,9999-12-31,True
+13,P013,Ordinateurs Ref-013,Electronique,Ordinateurs,Sony,Apple MENA,12563.82,Chine,2022-11-23,2026-04-20,9999-12-31,True
+14,P014,Ordinateurs Ref-014,Electronique,Ordinateurs,Xiaomi,Huawei Morocco,10239.36,USA,2023-08-10,2026-04-20,9999-12-31,False
+15,P015,Ordinateurs Ref-015,Electronique,Ordinateurs,Dell,Tech Distributors MA,10447.75,Chine,2023-09-20,2026-04-20,9999-12-31,True
+16,P016,Ordinateurs Ref-016,Electronique,Ordinateurs,Huawei,Huawei Morocco,10299.91,Corée du Sud,2020-03-03,2026-04-20,9999-12-31,True
+17,P017,Tablettes Ref-017,Electronique,Tablettes,Lenovo,Samsung Gulf,11686.77,Japon,2022-02-06,2026-04-20,9999-12-31,True
+18,P018,Tablettes Ref-018,Electronique,Tablettes,Lenovo,Samsung Gulf,6937.25,Corée du Sud,2020-10-14,2026-04-20,9999-12-31,True
+19,P019,Tablettes Ref-019,Electronique,Tablettes,Dell,Samsung Gulf,9527.54,Corée du Sud,2022-12-26,2026-04-20,9999-12-31,True
+20,P020,Tablettes Ref-020,Electronique,Tablettes,HP,Tech Distributors MA,9311.68,Corée du Sud,2023-03-18,2026-04-20,9999-12-31,True
+21,P021,Tablettes Ref-021,Electronique,Tablettes,LG,Huawei Morocco,3947.89,Japon,2021-11-02,2026-04-20,9999-12-31,True
+22,P022,Tablettes Ref-022,Electronique,Tablettes,Huawei,Tech Distributors MA,2709.58,Corée du Sud,2022-03-07,2026-04-20,9999-12-31,True
+23,P023,Tablettes Ref-023,Electronique,Tablettes,Samsung,Samsung Gulf,13031.6,USA,2022-12-20,2026-04-20,9999-12-31,True
+24,P024,Tablettes Ref-024,Electronique,Tablettes,Sony,Huawei Morocco,8421.01,Japon,2022-01-19,2026-04-20,9999-12-31,True
+25,P025,Accessoires Ref-025,Electronique,Accessoires,Sony,Huawei Morocco,14246.18,Chine,2020-02-02,2026-04-20,9999-12-31,True
+26,P026,Accessoires Ref-026,Electronique,Accessoires,LG,Apple MENA,3401.89,USA,2023-07-10,2026-04-20,9999-12-31,True
+27,P027,Accessoires Ref-027,Electronique,Accessoires,Xiaomi,Huawei Morocco,13712.51,Corée du Sud,2020-12-03,2026-04-20,9999-12-31,True
+28,P028,Accessoires Ref-028,Electronique,Accessoires,Dell,Huawei Morocco,4073.55,USA,2022-01-15,2026-04-20,9999-12-31,False
+29,P029,Accessoires Ref-029,Electronique,Accessoires,Xiaomi,Apple MENA,4912.43,Corée du Sud,2021-10-31,2026-04-20,9999-12-31,True
+30,P030,Accessoires Ref-030,Electronique,Accessoires,Sony,Apple MENA,10947.54,Corée du Sud,2021-03-15,2026-04-20,9999-12-31,True
+31,P031,Accessoires Ref-031,Electronique,Accessoires,Apple,Huawei Morocco,11992.12,Corée du Sud,2021-10-11,2026-04-20,9999-12-31,True
+32,P032,Accessoires Ref-032,Electronique,Accessoires,Samsung,Apple MENA,10472.03,Chine,2020-08-11,2026-04-20,9999-12-31,True
+33,P033,TV & Audio Ref-033,Electronique,TV & Audio,LG,Tech Distributors MA,2701.01,USA,2022-12-19,2026-04-20,9999-12-31,True
+34,P034,TV & Audio Ref-034,Electronique,TV & Audio,Lenovo,Huawei Morocco,9095.82,Corée du Sud,2022-09-05,2026-04-20,9999-12-31,True
+35,P035,TV & Audio Ref-035,Electronique,TV & Audio,Dell,Samsung Gulf,3563.4,Corée du Sud,2023-02-16,2026-04-20,9999-12-31,True
+36,P036,TV & Audio Ref-036,Electronique,TV & Audio,Apple,Huawei Morocco,14030.85,Japon,2022-05-26,2026-04-20,9999-12-31,True
+37,P037,TV & Audio Ref-037,Electronique,TV & Audio,Lenovo,Samsung Gulf,11894.82,Corée du Sud,2022-06-24,2026-04-20,9999-12-31,True
+38,P038,TV & Audio Ref-038,Electronique,TV & Audio,LG,Huawei Morocco,7416.04,Japon,2021-11-21,2026-04-20,9999-12-31,True
+39,P039,TV & Audio Ref-039,Electronique,TV & Audio,Huawei,Samsung Gulf,14469.8,Chine,2021-10-11,2026-04-20,9999-12-31,True
+40,P040,TV & Audio Ref-040,Electronique,TV & Audio,Dell,Huawei Morocco,9311.68,USA,2020-08-31,2026-04-20,9999-12-31,True
+41,P041,Vêtements Homme Ref-041,Mode,Vêtements Homme,H&M,Euro Fashion,2085.07,Espagne,2020-03-21,2026-04-20,9999-12-31,True
+42,P042,Vêtements Homme Ref-042,Mode,Vêtements Homme,H&M,Fashion Import MA,9605.52,Turquie,2021-04-20,2026-04-20,9999-12-31,True
+43,P043,Vêtements Homme Ref-043,Mode,Vêtements Homme,Zara,Euro Fashion,11999.72,Espagne,2020-05-21,2026-04-20,9999-12-31,True
+44,P044,Vêtements Homme Ref-044,Mode,Vêtements Homme,Wrangler,Trend Morocco,7233.91,Bangladesh,2023-07-21,2026-04-20,9999-12-31,True
+45,P045,Vêtements Homme Ref-045,Mode,Vêtements Homme,Mango,Trend Morocco,10245.82,Maroc,2021-08-05,2026-04-20,9999-12-31,True
+46,P046,Vêtements Homme Ref-046,Mode,Vêtements Homme,Mango,Euro Fashion,14926.75,France,2022-10-20,2026-04-20,9999-12-31,True
+47,P047,Vêtements Homme Ref-047,Mode,Vêtements Homme,Adidas,Fashion Import MA,10804.44,Bangladesh,2022-04-26,2026-04-20,9999-12-31,True
+48,P048,Vêtements Homme Ref-048,Mode,Vêtements Homme,Defacto,Euro Fashion,5526.1,Bangladesh,2023-12-12,2026-04-20,9999-12-31,True
+49,P049,Vêtements Femme Ref-049,Mode,Vêtements Femme,Adidas,Trend Morocco,14248.06,Turquie,2021-03-23,2026-04-20,9999-12-31,False
+50,P050,Vêtements Femme Ref-050,Mode,Vêtements Femme,H&M,Trend Morocco,11068.84,Bangladesh,2020-05-08,2026-04-20,9999-12-31,True
+51,P051,Vêtements Femme Ref-051,Mode,Vêtements Femme,Wrangler,Fashion Import MA,13186.03,Turquie,2023-07-07,2026-04-20,9999-12-31,True
+52,P052,Vêtements Femme Ref-052,Mode,Vêtements Femme,Mango,Euro Fashion,5688.49,France,2020-07-03,2026-04-20,9999-12-31,False
+53,P053,Vêtements Femme Ref-053,Mode,Vêtements Femme,Zara,Trend Morocco,2444.25,Bangladesh,2022-08-06,2026-04-20,9999-12-31,True
+54,P054,Vêtements Femme Ref-054,Mode,Vêtements Femme,Adidas,Euro Fashion,11515.68,Bangladesh,2023-12-17,2026-04-20,9999-12-31,True
+55,P055,Vêtements Femme Ref-055,Mode,Vêtements Femme,Defacto,Euro Fashion,11814.5,Espagne,2022-09-10,2026-04-20,9999-12-31,True
+56,P056,Vêtements Femme Ref-056,Mode,Vêtements Femme,H&M,Trend Morocco,8452.52,Turquie,2020-10-04,2026-04-20,9999-12-31,True
+57,P057,Chaussures Ref-057,Mode,Chaussures,Mango,Trend Morocco,4915.24,Maroc,2022-11-12,2026-04-20,9999-12-31,True
+58,P058,Chaussures Ref-058,Mode,Chaussures,Adidas,Euro Fashion,3654.28,Turquie,2020-04-18,2026-04-20,9999-12-31,True
+59,P059,Chaussures Ref-059,Mode,Chaussures,H&M,Euro Fashion,9699.03,Bangladesh,2022-07-25,2026-04-20,9999-12-31,True
+60,P060,Chaussures Ref-060,Mode,Chaussures,Nike,Fashion Import MA,9862.94,Espagne,2023-09-04,2026-04-20,9999-12-31,True
+61,P061,Chaussures Ref-061,Mode,Chaussures,Adidas,Euro Fashion,2767.75,Bangladesh,2023-03-06,2026-04-20,9999-12-31,True
+62,P062,Chaussures Ref-062,Mode,Chaussures,Adidas,Euro Fashion,14332.36,Bangladesh,2021-10-31,2026-04-20,9999-12-31,True
+63,P063,Chaussures Ref-063,Mode,Chaussures,Adidas,Euro Fashion,8319.39,Bangladesh,2020-12-07,2026-04-20,9999-12-31,True
+64,P064,Chaussures Ref-064,Mode,Chaussures,Defacto,Trend Morocco,11850.81,Espagne,2023-01-11,2026-04-20,9999-12-31,True
+65,P065,Sacs Ref-065,Mode,Sacs,Adidas,Trend Morocco,4038.34,France,2023-08-13,2026-04-20,9999-12-31,True
+66,P066,Sacs Ref-066,Mode,Sacs,Zara,Trend Morocco,3322.05,Espagne,2021-08-16,2026-04-20,9999-12-31,True
+67,P067,Sacs Ref-067,Mode,Sacs,H&M,Euro Fashion,3952.52,Maroc,2022-10-17,2026-04-20,9999-12-31,True
+68,P068,Sacs Ref-068,Mode,Sacs,H&M,Trend Morocco,12381.79,Bangladesh,2022-06-17,2026-04-20,9999-12-31,True
+69,P069,Sacs Ref-069,Mode,Sacs,Adidas,Trend Morocco,6630.12,France,2021-11-09,2026-04-20,9999-12-31,True
+70,P070,Sacs Ref-070,Mode,Sacs,Mango,Trend Morocco,11408.2,Espagne,2020-08-18,2026-04-20,9999-12-31,True
+71,P071,Sacs Ref-071,Mode,Sacs,H&M,Fashion Import MA,2117.22,Turquie,2022-11-28,2026-04-20,9999-12-31,True
+72,P072,Sacs Ref-072,Mode,Sacs,Nike,Euro Fashion,12194.2,France,2020-07-20,2026-04-20,9999-12-31,True
+73,P073,Montres Ref-073,Mode,Montres,H&M,Fashion Import MA,10951.59,Turquie,2020-04-21,2026-04-20,9999-12-31,True
+74,P074,Montres Ref-074,Mode,Montres,Wrangler,Trend Morocco,4016.41,Maroc,2023-05-27,2026-04-20,9999-12-31,True
+75,P075,Montres Ref-075,Mode,Montres,Adidas,Trend Morocco,12961.16,Espagne,2023-11-01,2026-04-20,9999-12-31,True
+76,P076,Montres Ref-076,Mode,Montres,Zara,Fashion Import MA,10026.85,Bangladesh,2021-04-29,2026-04-20,9999-12-31,True
+77,P077,Montres Ref-077,Mode,Montres,Adidas,Fashion Import MA,309.19,Maroc,2021-04-28,2026-04-20,9999-12-31,True
+78,P078,Montres Ref-078,Mode,Montres,Zara,Euro Fashion,12835.03,Bangladesh,2020-08-12,2026-04-20,9999-12-31,True
+79,P079,Montres Ref-079,Mode,Montres,Zara,Fashion Import MA,14313.71,Maroc,2023-03-14,2026-04-20,9999-12-31,True
+80,P080,Montres Ref-080,Mode,Montres,Adidas,Fashion Import MA,9862.94,Turquie,2023-04-16,2026-04-20,9999-12-31,True
+81,P081,Épicerie Ref-081,Alimentation,Épicerie,Danone,Fresh Supply MA,4576.72,France,2023-08-31,2026-04-20,9999-12-31,True
+82,P082,Épicerie Ref-082,Alimentation,Épicerie,Nestlé,Fresh Supply MA,13679.23,Turquie,2022-08-20,2026-04-20,9999-12-31,True
+83,P083,Épicerie Ref-083,Alimentation,Épicerie,Danone,Fresh Supply MA,1439.29,France,2020-10-24,2026-04-20,9999-12-31,True
+84,P084,Épicerie Ref-084,Alimentation,Épicerie,Cosumar,Fresh Supply MA,10989.74,Turquie,2020-11-18,2026-04-20,9999-12-31,True
+85,P085,Épicerie Ref-085,Alimentation,Épicerie,Danone,Fresh Supply MA,6181.17,Maroc,2020-10-12,2026-04-20,9999-12-31,True
+86,P086,Épicerie Ref-086,Alimentation,Épicerie,Nestlé,Agro Maroc,1783.21,Maroc,2020-08-02,2026-04-20,9999-12-31,True
+87,P087,Épicerie Ref-087,Alimentation,Épicerie,Cosumar,Fresh Supply MA,9281.74,Turquie,2020-10-05,2026-04-20,9999-12-31,False
+88,P088,Épicerie Ref-088,Alimentation,Épicerie,Danone,Food Import SA,13989.42,France,2023-06-29,2026-04-20,9999-12-31,True
+89,P089,Boissons Ref-089,Alimentation,Boissons,Cosumar,Agro Maroc,6500.16,Turquie,2023-01-03,2026-04-20,9999-12-31,True
+90,P090,Boissons Ref-090,Alimentation,Boissons,Nestlé,Food Import SA,9776.87,France,2021-09-09,2026-04-20,9999-12-31,True
+91,P091,Boissons Ref-091,Alimentation,Boissons,Cosumar,Fresh Supply MA,1551.86,France,2023-02-17,2026-04-20,9999-12-31,True
+92,P092,Boissons Ref-092,Alimentation,Boissons,Nestlé,Agro Maroc,13832.84,Espagne,2023-03-26,2026-04-20,9999-12-31,True
+93,P093,Boissons Ref-093,Alimentation,Boissons,Cosumar,Food Import SA,5664.88,Espagne,2023-04-26,2026-04-20,9999-12-31,False
+94,P094,Boissons Ref-094,Alimentation,Boissons,Nestlé,Fresh Supply MA,10837.53,Espagne,2020-05-15,2026-04-20,9999-12-31,True
+95,P095,Boissons Ref-095,Alimentation,Boissons,Danone,Agro Maroc,1966.64,Turquie,2022-10-13,2026-04-20,9999-12-31,True
+96,P096,Boissons Ref-096,Alimentation,Boissons,Label Vie,Food Import SA,1823.82,Espagne,2022-05-18,2026-04-20,9999-12-31,True
+97,P097,Confiserie Ref-097,Alimentation,Confiserie,Danone,Food Import SA,5841.16,Maroc,2020-09-23,2026-04-20,9999-12-31,True
+98,P098,Confiserie Ref-098,Alimentation,Confiserie,Marjane,Agro Maroc,13327.13,Turquie,2020-02-22,2026-04-20,9999-12-31,True
+99,P099,Confiserie Ref-099,Alimentation,Confiserie,Label Vie,Food Import SA,1890.54,Espagne,2022-09-08,2026-04-20,9999-12-31,True
+100,P100,Confiserie Ref-100,Alimentation,Confiserie,Marjane,Fresh Supply MA,6498.465,Maroc,2023-05-11,2026-04-20,9999-12-31,False
+101,P101,Confiserie Ref-101,Alimentation,Confiserie,Nestlé,Agro Maroc,6496.77,France,2020-02-15,2026-04-20,9999-12-31,True
+102,P102,Confiserie Ref-102,Alimentation,Confiserie,Centrale Laitière,Food Import SA,12907.16,France,2020-08-07,2026-04-20,9999-12-31,True
+103,P103,Confiserie Ref-103,Alimentation,Confiserie,Nestlé,Fresh Supply MA,12425.13,Espagne,2023-08-07,2026-04-20,9999-12-31,True
+104,P104,Confiserie Ref-104,Alimentation,Confiserie,Marjane,Food Import SA,534.13,Turquie,2020-02-04,2026-04-20,9999-12-31,False
+105,P105,Produits Bio Ref-105,Alimentation,Produits Bio,Centrale Laitière,Food Import SA,5560.06,Espagne,2021-09-23,2026-04-20,9999-12-31,True
+106,P106,Produits Bio Ref-106,Alimentation,Produits Bio,Centrale Laitière,Food Import SA,5610.95,Maroc,2020-12-19,2026-04-20,9999-12-31,True
+107,P107,Produits Bio Ref-107,Alimentation,Produits Bio,Danone,Agro Maroc,2096.04,Maroc,2022-08-03,2026-04-20,9999-12-31,True
+108,P108,Produits Bio Ref-108,Alimentation,Produits Bio,Danone,Agro Maroc,8346.37,Maroc,2022-11-19,2026-04-20,9999-12-31,True
+109,P109,Produits Bio Ref-109,Alimentation,Produits Bio,Danone,Food Import SA,12101.15,Turquie,2022-04-24,2026-04-20,9999-12-31,True
+110,P110,Produits Bio Ref-110,Alimentation,Produits Bio,Marjane,Fresh Supply MA,4178.74,Maroc,2022-09-28,2026-04-20,9999-12-31,True
+111,P111,Produits Bio Ref-111,Alimentation,Produits Bio,Marjane,Agro Maroc,8188.37,France,2023-10-04,2026-04-20,9999-12-31,True
+112,P112,Produits Bio Ref-112,Alimentation,Produits Bio,Cosumar,Agro Maroc,8911.57,Turquie,2020-08-09,2026-04-20,9999-12-31,True
+113,P113,Dattes & Fruits secs Ref-113,Alimentation,Dattes & Fruits secs,Danone,Agro Maroc,1312.3,Maroc,2022-04-16,2026-04-20,9999-12-31,True
+114,P114,Dattes & Fruits secs Ref-114,Alimentation,Dattes & Fruits secs,Centrale Laitière,Food Import SA,6956.1,Espagne,2020-06-12,2026-04-20,9999-12-31,True
+115,P115,Dattes & Fruits secs Ref-115,Alimentation,Dattes & Fruits secs,Danone,Fresh Supply MA,7405.9,France,2022-03-31,2026-04-20,9999-12-31,True
+116,P116,Dattes & Fruits secs Ref-116,Alimentation,Dattes & Fruits secs,Label Vie,Fresh Supply MA,420.61,Espagne,2021-01-07,2026-04-20,9999-12-31,True
+117,P117,Dattes & Fruits secs Ref-117,Alimentation,Dattes & Fruits secs,Marjane,Agro Maroc,6729.96,France,2023-05-05,2026-04-20,9999-12-31,True
+118,P118,Dattes & Fruits secs Ref-118,Alimentation,Dattes & Fruits secs,Label Vie,Food Import SA,1851.42,France,2021-02-11,2026-04-20,9999-12-31,False
+119,P119,Dattes & Fruits secs Ref-119,Alimentation,Dattes & Fruits secs,Marjane,Food Import SA,12347.65,Turquie,2022-06-19,2026-04-20,9999-12-31,True
+120,P120,Dattes & Fruits secs Ref-120,Alimentation,Dattes & Fruits secs,Label Vie,Agro Maroc,6498.465,France,2020-06-10,2026-04-20,9999-12-31,True

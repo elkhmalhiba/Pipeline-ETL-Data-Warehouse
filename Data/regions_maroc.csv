@@ -1,0 +1,21 @@
+﻿code_ville,nom_ville_standard,province,region_admin,zone_geo,population,code_postal
+TNG,Tanger,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,Nord,1065601,90000
+TET,Tétouan,Tétouan,Tanger-Tétouan-Al Hoceïma,Nord,380787,93000
+HOC,Al Hoceïma,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,Nord,156329,32000
+CSB,Casablanca,Casablanca,Casablanca-Settat,Centre,3752000,20000
+MOH,Mohammedia,Mohammedia,Casablanca-Settat,Centre,208612,28800
+RBT,Rabat,Rabat,Rabat-Salé-Kénitra,Centre-Nord,577827,10000
+SAL,Salé,Salé,Rabat-Salé-Kénitra,Centre-Nord,903485,11000
+KEN,Kénitra,Kénitra,Rabat-Salé-Kénitra,Centre-Nord,431282,14000
+FES,Fès,Fès,Fès-Meknès,Centre-Nord,1112072,30000
+MEK,Meknès,Meknès,Fès-Meknès,Centre-Nord,632079,50000
+MRK,Marrakech,Marrakech,Marrakech-Safi,Centre-Sud,928850,40000
+SAF,Safi,Safi,Marrakech-Safi,Centre-Sud,308508,46000
+AGA,Agadir,Agadir-Ida-Ou-Tanane,Souss-Massa,Sud,916000,80000
+INZ,Inezgane,Inezgane-Aït Melloul,Souss-Massa,Sud,128634,80350
+OUJ,Oujda,Oujda-Angad,Oriental,Est,494252,60000
+NAD,Nador,Nador,Oriental,Est,161726,62000
+BEN,Beni Mellal,Beni Mellal,Béni Mellal-Khénifra,Centre,192676,23000
+KHE,Khénifra,Khénifra,Béni Mellal-Khénifra,Centre,117510,54000
+LAA,Laâyoune,Laâyoune,Laâyoune-Sakia El Hamra,Sud,217732,70000
+DAK,Dakhla,Oued Ed-Dahab,Dakhla-Oued Ed-Dahab,Sud,106277,73000

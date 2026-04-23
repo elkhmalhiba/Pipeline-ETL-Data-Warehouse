@@ -1,0 +1,51 @@
+2026-04-20 01:01:31 | INFO     | mexora_etl | Logger initialisé — fichier : logs\etl_20260420_010131.log
+2026-04-20 01:01:31 | INFO     | mexora_etl | ============================================================
+2026-04-20 01:01:31 | INFO     | mexora_etl |   DÉMARRAGE PIPELINE ETL MEXORA
+2026-04-20 01:01:31 | INFO     | mexora_etl |   Mode : POSTGRES
+2026-04-20 01:01:31 | INFO     | mexora_etl | ============================================================
+2026-04-20 01:01:31 | INFO     | mexora_etl | ─── PHASE EXTRACT ───────────────────────────
+2026-04-20 01:01:32 | INFO     | mexora_etl | [EXTRACT] commandes : 51500 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\commandes_mexora.csv
+2026-04-20 01:01:32 | INFO     | mexora_etl | [EXTRACT] clients : 1050 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\clients_mexora.csv
+2026-04-20 01:01:32 | INFO     | mexora_etl | [EXTRACT] produits : 120 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\produits_mexora.json
+2026-04-20 01:01:32 | INFO     | mexora_etl | [EXTRACT] regions : 20 lignes extraites depuis C:\Users\PC\Desktop\data ingeneer\data\regions_maroc.csv
+2026-04-20 01:01:32 | INFO     | mexora_etl | ─── PHASE TRANSFORM ─────────────────────────
+2026-04-20 01:01:32 | INFO     | mexora_etl | [TRANSFORM commandes] Début : 51500 lignes
+2026-04-20 01:01:32 | INFO     | mexora_etl | [R1 doublons] 1500 lignes supprimées → 50000 restantes
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R2 dates] 0 dates invalides supprimées → 50000 restantes
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R3 villes] 8879 villes non reconnues → 'Non renseignée'
+2026-04-20 01:01:37 | WARNING  | mexora_etl | [R4 statuts] 0 valeurs non reconnues → 'inconnu'
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R5 quantites] 59 lignes supprimées (quantite <= 0)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R6 prix] 78 commandes test supprimées (prix = 0)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R7 livreurs] 3497 valeurs manquantes → '-1' (livreur inconnu)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [TRANSFORM commandes] Terminé : 51500 → 49863 lignes (1637 supprimées au total)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [TRANSFORM clients] Début : 1050 lignes
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R1 doublons clients] 52 doublons supprimés → 998 restants
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R2 sexe] Standardisation terminée
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R3 naissance] 40 dates de naissance invalidées (âge hors [16-100])
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R4 email] 67 emails invalides → NULL
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R5 villes] Harmonisation terminée
+2026-04-20 01:01:37 | INFO     | mexora_etl | [TRANSFORM clients] Terminé : 1050 → 998 lignes (52 supprimées)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [TRANSFORM produits] Début : 120 lignes
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R1 categories] Normalisation terminée
+2026-04-20 01:01:37 | INFO     | mexora_etl | [R2 prix] 6 prix NULL remplacés par médiane de la catégorie
+2026-04-20 01:01:37 | INFO     | mexora_etl | [TRANSFORM produits] Terminé : 120 → 120 lignes
+2026-04-20 01:01:37 | INFO     | mexora_etl | [SEGMENT] 0 clients segmentés — Gold:0 / Silver:0 / Bronze:0
+2026-04-20 01:01:37 | INFO     | mexora_etl | [DIM_TEMPS] 2557 jours générés (2020-01-01 → 2026-12-31)
+2026-04-20 01:01:37 | INFO     | mexora_etl | [DIM_REGION] 20 régions chargées
+2026-04-20 01:01:37 | INFO     | mexora_etl | [DIM_PRODUIT] 120 produits — SCD Type 2 initialisé
+2026-04-20 01:01:37 | INFO     | mexora_etl | [DIM_CLIENT] 998 clients — SCD Type 2 initialisé
+2026-04-20 01:01:37 | INFO     | mexora_etl | [DIM_LIVREUR] 51 livreurs construits
+2026-04-20 01:01:38 | INFO     | mexora_etl | [FAIT_VENTES] 48446 lignes construites
+2026-04-20 01:01:38 | INFO     | mexora_etl | ─── PHASE LOAD ──────────────────────────────
+2026-04-20 01:01:39 | ERROR    | mexora_etl | ERREUR PIPELINE : No module named 'psycopg2'
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\data ingeneer\main.py", line 89, in run_pipeline
+    engine = sqlalchemy.create_engine(DATABASE_URL)
+  File "<string>", line 2, in create_engine
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\create.py", line 617, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+  File "C:\Users\PC\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py", line 696, in import_dbapi
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
